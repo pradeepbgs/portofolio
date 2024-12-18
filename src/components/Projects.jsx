@@ -1,5 +1,4 @@
-import React from 'react';
-import project1 from "../assets/project1.webp"
+import project1 from "../assets/project1.png"
 import project2 from "../assets/project2.webp"
 
 import { AiFillGithub } from 'react-icons/ai'
@@ -8,19 +7,20 @@ import Reveal from './Reveal';
 const projects = [
     {
         img: project1,
-        title: "openai-api-helper",
-        description: "Straightforward npm package designed to simplify making calls to the OpenAI API for various text-based prompts and responses.",
+        title: "DieselJS",
+        description: "Diesel is a lightweight HTTP server library for Bunjs, think like express where you build your backend , its the same with diesel you can build your backend applications",
         links: {
-            site: "https://www.npmjs.com/package/openai-api-helper",
-            github: "https://github.com/Buddhsen-tripathi/openai-api-helper",
+            site: "https://diesel-core.vercel.app/getting-started/getting-started",
+            github: "https://github.com/diesel-core/diesel",
         }
     },
     {
         img: project2,
-        title:"SmartText Enhancer",
-        description: "Productivity-focused Chrome extension that uses AI to summarize content and check spelling and grammar.",
+        title:"DevTube",
+        description: "Devtube is a full-stack web application that replicates key features of the popular video-sharing platform, YouTube. It allows users to upload, watch, and interact with videos.",
         links: {
-            site: "https://chromewebstore.google.com/detail/smarttext-enhancer/chmpfoicecijpgmgcpnfhakmeaofmipm"
+            site: "https://fstube.vercel.app/",
+            github: "https://github.com/pradeepbgs/DevTube-backend",
         }
     }
 ]
@@ -31,7 +31,7 @@ const Project = () => {
             <Reveal>
                 <h2 className='text-4xl font-bold text-center text-gray-200 mb-12'>Projects</h2>
                 {projects.map((project, index) => (
-                    <Reveal>
+                    <Reveal key={index.toString()}>
                         <div key={index}
                             className={`flex flex-col md:flex-row ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''} mb-12`}>
                             <div className='w-full md:w-1/2 p-6'>

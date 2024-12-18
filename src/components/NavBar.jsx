@@ -44,9 +44,9 @@ const Navbar = () => {
 
                 {!isBlogPage && (
                     <ul className='hidden md:flex gap-12 z-10 cursor-pointer'>
-                        <li><Link to="project" offset={-120} smooth="true" duration={400}>Projects</Link></li>
-                        <li><Link to="recentblogs" offset={-150} smooth="true" duration={400}>Blogs</Link></li>
-                        <li><Link to="contact" offset={50} smooth="true" duration={400}>Contact</Link></li>
+                        {/* <li><Link to="project" offset={-120} smooth="true" duration={400}>Projects</Link></li>
+                        <li><Link to="recentblogs" offset={-150} smooth="true" duration={400}>Blogs</Link></li> */}
+                        {/* <li><Link to="contact" offset={50} smooth="true" duration={400}>Contact</Link></li> */}
                     </ul>
                 )}
 
