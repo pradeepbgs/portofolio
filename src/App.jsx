@@ -19,14 +19,9 @@ function App() {
             <>
               <Hero />
               <Project />
-              {/* <RecentBlogs /> */}
-              {/* <FunXProjects /> */}
-              {/* <Contact /> */}
             </>
           }
         />
-        {/* <Route path="/blogs" element={<BlogPage />} /> */}
-        {/* <Route path="/2025-birthday-rankings" element={<BirthdayRankings />} /> */}
       </Routes>
       <Footer />
       <Analytics />

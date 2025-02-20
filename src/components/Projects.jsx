@@ -1,6 +1,6 @@
 import project1 from "../assets/project1.png"
 import project2 from "../assets/project2.webp"
-
+import Pingfile from '../assets/pingfile.png'
 import { AiFillGithub } from 'react-icons/ai'
 import Reveal from './Reveal';
 
@@ -12,6 +12,15 @@ const projects = [
         links: {
             site: "https://diesel-core.vercel.app/getting-started/getting-started",
             github: "https://github.com/diesel-core/diesel",
+        }
+    },
+    {
+        img: Pingfile,
+        title: "PingFile",
+        description: "PingFile is a command-line tool that allows you to execute API requests from configuration files defined in JSON, YAML, or PKFILE formats. It helps automate and manage API testing and execution, making it easier to work with various API configurations from a single command.",
+        links: {
+            site: "https://github.com/pradeepbgs/PingFile",
+            github: "https://github.com/pradeepbgs/PingFile",
         }
     },
     {
