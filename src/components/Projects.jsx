@@ -28,7 +28,7 @@ const projects = [
         title:"DevTube",
         description: "Devtube is a full-stack web application that replicates key features of the popular video-sharing platform, YouTube. It allows users to upload, watch, and interact with videos.",
         links: {
-            site: "https://fstube.vercel.app/",
+            site: "https://video-backend-3ot2.onrender.com/",
             github: "https://github.com/pradeepbgs/DevTube-backend",
         }
     }
