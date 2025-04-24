@@ -39,7 +39,7 @@ export default function Home() {
             I am a software developer who loves building softwares that developers 
             use in real world.{" "}
           </p>
-          {/* <p className="">
+          <p className="">
             I am very active on{" "}
             <Link
               href={SocialLinks.x}
@@ -49,7 +49,7 @@ export default function Home() {
               x/twitter
             </Link>{" "}
             where i share my thoughts.{" "}
-          </p> */}
+          </p>
           <div className="flex gap-3 ">
             <Link
               href={SocialLinks.github}

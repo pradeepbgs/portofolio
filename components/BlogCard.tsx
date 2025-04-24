@@ -7,6 +7,7 @@ export default function BlogCard({ blog }: { blog: BlogMetadata }) {
     <Link
       className="flex flex-col gap-2 border border-zinc-800 rounded-md p-4 my-3 hover:scale-105 transition-all"
       href={blog.link}
+      target="_blank"
     >
       <h1 className="text-2xl font-extrabold">
         {blog.title}

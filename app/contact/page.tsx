@@ -23,7 +23,7 @@ export default function Contact() {
             href="mailto:ayushsharma.code@outlook.com"
             className="underline hover:no-underline"
           >
-            ayushsharma.code@outlook.com
+            pradeepkumarbgs62019@gmail.com
           </Link>
         </div>
         <div className="flex gap-3 mt-3">

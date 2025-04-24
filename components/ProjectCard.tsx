@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project, className = "" }:  ProjectCardProps  ) {
   return (
-    <Link href={project.liveLink || project.githubLink || "https://www.youtube.com/watch?v=dQw4w9WgXcQ"} className={`pt-10 pl-3 ${className} pr-3  mb-3 flex flex-col gap-1 transition-all hover:scale-105`}>
+    <div  className={`pt-10 pl-3 ${className} pr-3  mb-3 flex flex-col gap-1 transition-all hover:scale-105`}>
       <div className="flex flex-col mb-6">
         <Image
           src={project.imgPath}
@@ -61,6 +61,6 @@ export default function ProjectCard({ project, className = "" }:  ProjectCardPro
           </Link>
         )}
       </div>
-    </Link>
+    </div>
   );
 }

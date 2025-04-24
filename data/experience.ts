@@ -7,8 +7,8 @@ export type Experience = {
 
 export const experience: Experience[] = [
     {
-        company: "Vdrive",
-        info: "As a Freelancer develoed PHP based application",
+        company: "Vdrive - Freelance project",
+        info: "develoed PHP based application for Gdrive files link generation and much more",
         link: "vdrive.lol",
         logo: ""
     },

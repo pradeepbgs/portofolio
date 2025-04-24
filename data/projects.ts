@@ -21,7 +21,7 @@ export const projects: Project[] = [
     {
         title: "Diesel.js",
         description: "A web framework built using Bun.js – similar to Express, but with more advanced features.",
-        imgPath: "/project-images/dieseljs.png",
+        imgPath: "/project-images/diesel.png",
         techs: ["Bun.js", "TypeScript", "Web Framework"],
         githubLink: "https://github.com/diesel-core/diesel",
         liveLink: "https://npmjs.com/package/diesel-core",
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     {
         title: "ex-router",
         description: "A file-based routing library like Next.js for building modular backends easily.",
-        imgPath: "/project-images/ex-router.png",
+        imgPath: "https://pbs.twimg.com/profile_images/1906706191469662208/6I5OCfzr_400x400.jpg",
         techs: ["Node.js", "File-based Routing", "NPM Package"],
         githubLink: "https://github.com/pradeepbgs/ex-router",
         liveLink: "https://npmjs.com/package/ex-router",

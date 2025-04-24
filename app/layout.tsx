@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 import { PostHogProvider } from "./providers";
 
 export const metadata: Metadata = {
-  title: "Ayush Sharma",
-  description: "Personal Portfolio of ayush sharma",
+  title: "Pradeep Kumar",
+  description: "Personal Portfolio",
 };
 
 export default function RootLayout({
