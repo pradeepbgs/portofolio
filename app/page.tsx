@@ -17,6 +17,46 @@ export default function Home() {
     delay: 0.4,
     ease: [0, 0.71, 0.2, 1.01],
   }
+
+  // Categorized skills data
+  const categorizedSkills = [
+    {
+      title: "Web & Other Skills",
+      skills: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Node.js",
+        "Express.js",
+        "Django",
+        "Python",
+        "NoSQL",
+        "SQL",
+        "Tailwind CSS",
+        "Git",
+        "Docker",
+        "AWS (basic)",
+        "REST APIs",
+        "Go & Java ( learning and exploring )"
+      ]
+    },
+    {
+      title: "App Development",
+      skills: ["React Native Expo"]
+    },
+    {
+      title: "High-Level System Design",
+      skills: [
+        "Scalability Concepts",
+        "API Design (High Level)",
+        "Caching Strategies",
+        "Microservices (Conceptual)"
+      ]
+    }
+  ];
+
+
   return (
     <motion.main initial={{ filter: "blur(15px)", y:20 }} animate={{ filter: "blur(0px)", opacity: 1, y:0 }} transition={transition} className="opacity-0">
       {/* About me Section */}
@@ -36,8 +76,12 @@ export default function Home() {
           </h1>
 
           <p className="">
-            I am a software developer who loves building softwares that developers 
+            I am a software developer who loves building softwares that developers
             use in real world.{" "}
+          </p>
+          {/* You can keep this sentence if you like the extra context */}
+          <p className="">
+            I'm also actively learning and exploring system design concepts at a high level.
           </p>
           <p className="">
             I am very active on{" "}
@@ -102,9 +146,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Work experience section */}
       <h1 className="text-3xl font-bold pt-10 ">Work experience</h1>
       <div>
-        {/* Experience section */}
         {experience.map((exp: Experience) => (
           <Link
             href={exp.link}
@@ -127,8 +172,29 @@ export default function Home() {
           </Link>
         ))}
       </div>
-      <h1 className="text-3xl font-bold pt-10 ">Projects</h1>
+
+      {/* Categorized Skills Section */}
+      <h1 className="text-3xl font-bold pt-10 ">Skills</h1>
+      <div className="flex flex-col gap-6 py-4"> {/* Container for skill categories */}
+        {categorizedSkills.map((category) => (
+          <div key={category.title}>
+            <h2 className="text-xl font-semibold mb-2">{category.title}</h2>
+            <div className="flex flex-wrap gap-2"> {/* Container for skill tags within a category */}
+              {category.skills.map((skill) => (
+                <span
+                  key={skill}
+                  className="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm font-medium dark:bg-zinc-700 dark:text-zinc-200"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
       {/* Projects section */}
+      <h1 className="text-3xl font-bold pt-10 ">Projects</h1>
       <div className="flex flex-wrap">
         {projects.slice(0, 4).map((project) => (
           <ProjectCard

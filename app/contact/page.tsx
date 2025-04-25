@@ -20,7 +20,7 @@ export default function Contact() {
         <div className="flex items-center gap-2">
           <CiMail size={20} />
           <Link
-            href="mailto:ayushsharma.code@outlook.com"
+            href="mailto:pradeepkumarbgs62019@gmail.com"
             className="underline hover:no-underline"
           >
             pradeepkumarbgs62019@gmail.com
