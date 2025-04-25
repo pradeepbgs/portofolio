@@ -81,7 +81,7 @@ export default function Home() {
           </p>
           {/* You can keep this sentence if you like the extra context */}
           <p className="">
-            I'm also actively learning and exploring system design concepts at a high level.
+            Im also actively learning and exploring system design concepts at a high level.
           </p>
           <p className="">
             I am very active on{" "}
