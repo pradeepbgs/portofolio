@@ -10,6 +10,15 @@ export type Project = {
 
 export const projects: Project[] = [
     {
+        title: "OpenFile",
+        description: "OpenFile is a secure and ecnrypted file reciever/sharing service. with help of openfile you can generate a link and share to any anonymous person and that person can send you files anonymously.",
+        imgPath: "/project-images/openfile.png",
+        techs: ["Bun.js", "React", "SQL"],
+        githubLink: "",
+        liveLink: "https://openfile-one.vercel.app/",
+        status: 'online'
+    },
+    {
         title: "DevTube",
         description: "A YouTube-like full-stack app with video uploads, authentication, comments, likes, and more.",
         imgPath: "/project-images/devtube.png",
