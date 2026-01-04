@@ -19,7 +19,7 @@ export default function ProjectCard({ project, className = "" }:  ProjectCardPro
           width={370}
           height={370}
           className="rounded-sm hover:blur-xs transition-all"
-          alt="HackToGSoC"
+          alt="images"
         />
         <div className="flex justify-between items-center">
           <h1 className="font-bold mb-3 text-xl">{project.title}</h1>

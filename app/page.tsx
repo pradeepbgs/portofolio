@@ -57,17 +57,19 @@ export default function Home() {
   ];
 
 
+const profile_picture = process.env.NEXT_PUBLIC_PROFILE_URL;
+
   return (
     <motion.main initial={{ filter: "blur(15px)", y:20 }} animate={{ filter: "blur(0px)", opacity: 1, y:0 }} transition={transition} className="opacity-0">
       {/* About me Section */}
       <div  className="pt-10 flex gap-10 sm:flex-row flex-col">
         <div className="flex items-center justify-center">
           <Image
-            src={pradeep}
+            src={profile_picture ?? ''}
             width={350}
             height={350}
             className="rounded-2xl"
-            alt="Ayush"
+            alt="Pradeep"
           />
         </div>
         <div className="gap-4 flex flex-col">
@@ -75,15 +77,15 @@ export default function Home() {
             Hi, i&apos;m pradeep 👋
           </h1>
 
-          <p className="">
+          <div className="">
             I am a software developer who loves building softwares that developers
             use in real world.{" "}
-          </p>
+          </div>
           {/* You can keep this sentence if you like the extra context */}
           <p className="">
             Im also actively learning and exploring system design concepts at a high level.
           </p>
-          <p className="">
+          <div className="">
             I am very active on{" "}
             <Link
               href={SocialLinks.x}
@@ -93,7 +95,7 @@ export default function Home() {
               x/twitter
             </Link>{" "}
             where i share my thoughts.{" "}
-          </p>
+          </div>
           <div className="flex gap-3 ">
             <Link
               href={SocialLinks.github}
