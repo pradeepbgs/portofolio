@@ -1,7 +1,6 @@
 // "use client";
 
 import Image from "next/image";
-import pradeep from "@/public/pradeep.jpg";
 import Link from "next/link";
 import { projects } from "@/data/projects";
 import ProjectCard from "@/components/ProjectCard";
