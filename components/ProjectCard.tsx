@@ -24,16 +24,16 @@ export default function ProjectCard({ project, className = "" }:  ProjectCardPro
         <div className="flex justify-between items-center">
           <h1 className="font-bold mb-3 text-xl">{project.title}</h1>
           {project.status === "online" && (
-            <p className="bg-green-200 text-green-800 text-xs px-1 rounded-sm flex items-center gap-1 font-bold border border-green-800">
+            <div className="bg-green-200 text-green-800 text-xs px-1 rounded-sm flex items-center gap-1 font-bold border border-green-800">
               online{" "}
               <div className="w-2 h-2 rounded-full bg-green-600 animate-pulse" />
-            </p>
+            </div>
           )}
           {project.status === "building" && (
-            <p className="bg-yellow-200 text-yellow-800 text-xs px-1 rounded-sm flex items-center gap-1 font-bold border border-yellow-800">
+            <div className="bg-yellow-200 text-yellow-800 text-xs px-1 rounded-sm flex items-center gap-1 font-bold border border-yellow-800">
               building{" "}
               <div className="w-2 h-2 rounded-full bg-yellow-600 animate-pulse" />
-            </p>
+            </div>
           )}
         </div>
         <div className="flex gap-2 flex-wrap">

@@ -4,8 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { projects } from "@/data/projects";
 import ProjectCard from "@/components/ProjectCard";
-import { FaGithub, FaInstagram, FaLinkedin, FaDiscord } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SocialLinks } from "@/lib/constants";
 import { Experience, experience } from "@/data/experience";
 import * as motion from "motion/react-client"
@@ -84,17 +83,6 @@ const profile_picture = process.env.NEXT_PUBLIC_PROFILE_URL;
           <p className="">
             Im also actively learning and exploring system design concepts at a high level.
           </p>
-          <div className="">
-            I am very active on{" "}
-            <Link
-              href={SocialLinks.x}
-              target="_blank"
-              className="font-bold underline hover:no-underline"
-            >
-              x/twitter
-            </Link>{" "}
-            where i share my thoughts.{" "}
-          </div>
           <div className="flex gap-3 ">
             <Link
               href={SocialLinks.github}
@@ -113,36 +101,9 @@ const profile_picture = process.env.NEXT_PUBLIC_PROFILE_URL;
                 className="hover:scale-125 transition-all"
               />
             </Link>
-            <Link
-              href={SocialLinks.instagram}
-              target="_blank"
-              className="flex items-center"
-            >
-              <FaInstagram
-                size={27}
-                className="hover:scale-125 transition-all"
-              />
-            </Link>
-            <Link
-              href={SocialLinks.x}
-              target="_blank"
-              className="flex items-center"
-            >
-              <FaXTwitter
-                size={27}
-                className="hover:scale-125 transition-all"
-              />
-            </Link>
-            <Link
-              href={SocialLinks.discord}
-              target="_blank"
-              className="flex items-center"
-            >
-              <FaDiscord size={27} className="hover:scale-125 transition-all" />
-            </Link>
           </div>
           <div className="bg-green-200 text-green-800 text-xs px-1 rounded-sm flex items-center gap-2 font-bold border w-fit border-green-800">
-            open for work
+            Currently working as a Software Engineer at Docxster
             <div className="w-2 h-2 rounded-full bg-green-600 animate-pulse" />
           </div>
         </div>
@@ -168,6 +129,11 @@ const profile_picture = process.env.NEXT_PUBLIC_PROFILE_URL;
               <h2 className="font-bold underline hover:no-underline text-lg">
                 {exp.company}
               </h2>
+              
+              <p className="text-sm text-zinc-400">
+                {exp.role} • {exp.duration}
+              </p>
+
             </div>
             <h3>{exp.info}</h3>
           </Link>

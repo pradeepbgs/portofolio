@@ -4,7 +4,6 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { jura } from "@/fonts/jura";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/Footer";
-import { PostHogProvider } from "./providers";
 
 export const metadata: Metadata = {
   title: "Pradeep Kumar",
@@ -21,7 +20,7 @@ export default function RootLayout({
       <body className={`${jura.className} antialiased`}>
         <MaxWidthWrapper>
           <Navbar />
-          <PostHogProvider>{children}</PostHogProvider>
+          {children}
           <Footer />
         </MaxWidthWrapper>
       </body>
