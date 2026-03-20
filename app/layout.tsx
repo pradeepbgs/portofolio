@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { jura } from "@/fonts/jura";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/Footer";
+import Background from "@/components/Background";
 
 export const metadata: Metadata = {
   title: "Pradeep Kumar",
@@ -18,11 +18,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${jura.className} antialiased`}>
-        <MaxWidthWrapper>
-          <Navbar />
+        <Background />
+        <Navbar />
+        <div
+          className="relative max-w-4xl mx-auto px-5 pt-16"
+          style={{ zIndex: 10 }}
+        >
           {children}
           <Footer />
-        </MaxWidthWrapper>
+        </div>
       </body>
     </html>
   );
