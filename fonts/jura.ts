@@ -1,7 +1,8 @@
-import { Jura } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 
-export const jura = Jura({
-    weight: "400",
-    style: "normal",
-    subsets: ["latin"],
-  });
+export const jura = Space_Grotesk({
+  weight: ["400", "500", "600", "700"],
+  style: "normal",
+  subsets: ["latin"],
+  display: "swap",
+});

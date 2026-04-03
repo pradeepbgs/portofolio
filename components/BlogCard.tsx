@@ -7,22 +7,30 @@ export default function BlogCard({ blog }: { blog: BlogMetadata }) {
     <Link
       href={blog.link}
       target="_blank"
-      className="flex flex-col gap-3 rounded-xl p-5 my-3 group glass-card"
+      className="flex flex-col gap-3 rounded-xl p-5 my-2 group glass-card"
     >
-      <h2 className="text-lg font-semibold text-slate-200 group-hover:text-emerald-300 transition-colors leading-snug">
+      <h2 className="text-base font-semibold text-white group-hover:text-emerald-300 transition-colors leading-snug">
         {blog.title}
       </h2>
-      <div className="flex gap-5">
-        <div className="flex items-center gap-1.5 text-slate-500 text-xs">
-          <FaCalendar size={11} />
+      <div className="flex gap-4">
+        <div
+          className="flex items-center gap-1.5 text-xs"
+          style={{ color: "#555" }}
+        >
+          <FaCalendar size={10} />
           <span>{blog.date}</span>
         </div>
-        <div className="flex items-center gap-1.5 text-slate-500 text-xs">
-          <FaClock size={11} />
+        <div
+          className="flex items-center gap-1.5 text-xs"
+          style={{ color: "#555" }}
+        >
+          <FaClock size={10} />
           <span>{blog.readingTime}</span>
         </div>
       </div>
-      <p className="text-slate-400 text-sm leading-relaxed">{blog.description}</p>
+      <p className="text-sm leading-relaxed" style={{ color: "#777" }}>
+        {blog.description}
+      </p>
     </Link>
   );
 }
